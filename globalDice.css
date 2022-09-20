@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: none;
+}
+
+.dice {
+    float:left;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: 1px solid rgba(255, 255, 255, 0.884);
+    width: 150px;
+    height: 150px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    position: relative;
+    display: table;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    transform: scale(1,1);
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transform: scale(1,1);
+    transition: all 0.3s linear;
+}
+
+.dot_center {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.dot_top_right {
+    top: 25px;
+    right: 25px;
+}
+
+.dot_bottom_left {
+    bottom: 25px;
+    left: 25px;
+}
+
+.dot_top_left {
+    top: 25px;
+    left: 25px;
+}
+
+.dot_bottom_right {
+    bottom:25px;
+    right: 25px;
+}
+
+.dot_center_left {
+    left: 0;
+    right: 0;
+    top: 25px;
+    margin: auto;
+}
+
+.dot_center_right {
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin: auto;
+}
+
+.dice h2 {
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 30px;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(0,0);
+    vertical-align: middle;
+    display: table-cell;
+    visibility: hidden;
+}
+
+.dice:hover {
+    transform: scale(1.2,1.2);
+}
+
+.dice:hover h2 {
+    
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1,1);
+}
+
+.dice:hover .dot {
+    transform: scale(0,0);
+}
+
+@keyframes color {
+    0%   { background: #cc3333; }
+    10%  { background: #cc8f33; }
+    20%  { background: #ccc933; }
+    30%  { background: #33cc33; }
+    40%  { background: #33ccc4; }
+    50%  { background: #3375cc; }
+    60%  { background: #3d33cc; }
+    70%  { background: #8233cc; }
+    80%  { background: #c733cc; }
+    90%  { background: #cc338c; }
+    100% { background: #cc3333; }
+  }
+  
+  body {
+    background: #33CCCC;
+    animation: color 10s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Kavoon', sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
