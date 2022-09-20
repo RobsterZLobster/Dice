@@ -1,1 +1,1 @@
-# Dice
+Hover over dice
